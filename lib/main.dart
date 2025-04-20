@@ -10,7 +10,6 @@ void main() {
   ));
 }
 
-// Widget Stateless para el diseño básico de calculadora
 class Calculadora extends StatelessWidget {
   const Calculadora({super.key});
 
@@ -19,7 +18,6 @@ class Calculadora extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // Pantalla de la calculadora
         Expanded(
           flex: 1,
           child: Container(
@@ -34,7 +32,6 @@ class Calculadora extends StatelessWidget {
           ),
         ),
         
-        // Fila 1: Botones superiores
         Expanded(
           flex: 1,
           child: Row(
@@ -47,7 +44,6 @@ class Calculadora extends StatelessWidget {
           ),
         ),
         
-        // Fila 2
         Expanded(
           flex: 1,
           child: Row(
@@ -60,7 +56,6 @@ class Calculadora extends StatelessWidget {
           ),
         ),
         
-        // Fila 3
         Expanded(
           flex: 1,
           child: Row(
@@ -73,7 +68,6 @@ class Calculadora extends StatelessWidget {
           ),
         ),
         
-        // Fila 4
         Expanded(
           flex: 1,
           child: Row(
@@ -86,7 +80,6 @@ class Calculadora extends StatelessWidget {
           ),
         ),
         
-        // Fila 5
         Expanded(
           flex: 1,
           child: Row(
@@ -102,7 +95,6 @@ class Calculadora extends StatelessWidget {
   }
 }
 
-// Widget Stateless para cada botón
 class BotonCalculadora extends StatelessWidget {
   final String texto;
   
